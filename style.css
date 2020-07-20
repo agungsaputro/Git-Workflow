@@ -1,17 +1,21 @@
 * {
     max-width: 700px;
     margin: auto;
+    font-family: calibri;
   }
   
   div {
     border-radius: 5px;
   }
+  .container{
+    background: #ccc;
+  }
   
   #header {
     height: 40px;
     width: 100%;
-    background-color: #ffcccc;
-    position: fixed;
+    background-color: #dc3435;
+    position: relative;
     z-index: 1;
   }
   
@@ -22,35 +26,26 @@
   #footer {
     height: 50px;
     width: 100%;
-    background-color: #ffcccc;
+    background-color: #dc3435;
+    color: white;
     clear: both;
     position: relative;
   }
   
-  .left {
-    height: 1000px;
-    width: 45px;
-    background-color: #e0eeee;
-    float: left;
-    position: fixed;
-  }
-  
-  .right {
-    height: 1000px;
-    width: 45px;
-    background-color: #e0eeee;
-    float: right;
-    position: inherit;
-  }
-  
+   
   .stuff {
-    display: inline-block;
-    margin-top: 6px;
-    margin-left: 55px;
+    display: block;
+    padding: 55px;
+    margin: 50px auto;
     width: 75%;
     height: 1000px;
+    background: #fff;
   }
   
+  .person{
+    margin-top: 20px;
+  }
+
   p,
   li {
     font-family: 'Cormorant Garamond';
@@ -58,6 +53,8 @@
   
   .head {
     font-size: 20px;
+    margin: 10px 0;
+    border-bottom: solid 1px #ccc;
   }
   
   #name {
@@ -73,10 +70,7 @@
   }
   
   @media only screen and (max-width: 430px) {
-    .left,
-    .right {
-      display: none;
-    }
+    
     .stuff {
       width: 100%;
       margin-left: 10px;
